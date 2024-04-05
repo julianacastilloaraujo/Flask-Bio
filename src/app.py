@@ -16,11 +16,11 @@ def index():
 def agregarPersona():
     coleccion = con_bd['Personas']
     nombre = request.form['nombre']
-    apellido = request.form['apellido']
-    telefono = request.form['telefono']
+    correo = request.form['correo']
+    mensaje = request.form['mensaje']
     
-    if nombre and apellido and telefono:
-      objpersona = Persona(nombre, apellido, telefono)
+    if nombre and correo and mensaje:
+      objpersona = Persona(nombre, correo, mensaje)
       coleccion.insert_one(objpersona.formato_doc())
       return redirect(url_for('index'))
     else:
