@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+} 
+
+h2, h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Estilos para imágenes */
+img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 180px;
+  height: 180px;
+  margin: 10px auto; 
+  display: block; 
+}
+
+/* Estilos para contenedores */
+.container {
+  max-width: 900px;
+  padding: 20px;
+}
+
+.form-container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Estilos para los campos de texto */
+input {
+  width: calc(100% - 22px); 
+  padding: 8px; 
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Estilos para los botones */
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para el formulario */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  text-align: left; /* Centrar el contenido del formulario */
+}
+
+/* Estilos para los campos de texto del formulario */
+form input[type="text"] {
+  width: calc(100% - 20px); /* Ajustar el ancho del campo de texto */
+  padding: 10px; /* Ajustar el relleno */
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para el botón del formulario */
+form button {
+  width: 100%; /* Ocupar todo el ancho disponible */
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para los títulos del formulario */
+form h2, form p {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
