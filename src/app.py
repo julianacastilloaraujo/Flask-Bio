@@ -30,8 +30,7 @@ def agregarPersona():
 def eliminarPersona(nombre_persona):
     coleccion = con_bd['Personas']
     coleccion.delete_one({'nombre': nombre_persona})
-
-    
+    return redirect(url_for('index'))
 
 if __name__ == '__main__':
     app.run(debug=True)
