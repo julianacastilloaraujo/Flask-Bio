@@ -26,5 +26,12 @@ def agregarPersona():
     else:
       return "Error"    
 
+@app.route('/eliminar_persona/<string:nombre_persona>')
+def eliminarPersona(nombre_persona):
+    coleccion = con_bd['Personas']
+    coleccion.delete_one({'nombre': nombre_persona})
+
+    
+
 if __name__ == '__main__':
     app.run(debug=True)
